@@ -1,0 +1,26 @@
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2026-01-11 19:08 UTC
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.0000070s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT     STATE SERVICE
+22/tcp   open  ssh
+| ssh-hostkey: 
+|   256 2a:0a:80:36:3b:4f:48:b1:a6:01:6b:6a:80:25:84:62 (ECDSA)
+|_  256 ba:4d:33:79:96:e4:52:ed:9e:91:52:8b:7c:a3:49:4a (ED25519)
+3306/tcp open  mysql
+| ssl-cert: Subject: commonName=MySQL_Server_8.0.44_Auto_Generated_Server_Certificate
+| Not valid before: 2025-12-19T16:19:43
+|_Not valid after:  2035-12-17T16:19:43
+| mysql-info: 
+|   Protocol: 10
+|   Version: 8.0.44-0ubuntu0.24.04.2
+|   Thread ID: 39
+|   Capabilities flags: 65535
+|   Some Capabilities: Speaks41ProtocolNew, Support41Auth, Speaks41ProtocolOld, DontAllowDatabaseTableColumn, SwitchToSSLAfterHandshake, SupportsCompression, LongPassword, SupportsTransactions, InteractiveClient, ODBCClient, IgnoreSigpipes, ConnectWithDatabase, IgnoreSpaceBeforeParenthesis, SupportsLoadDataLocal, LongColumnFlag, FoundRows, SupportsAuthPlugins, SupportsMultipleResults, SupportsMultipleStatments
+|   Status: Autocommit
+|   Salt: E|al\x06R\x1B\x03;\x087I=Hy\x14NLvp
+|_  Auth Plugin Name: caching_sha2_password
+|_ssl-date: TLS randomness does not represent time
+|_mysql-vuln-cve2012-2122: ERROR: Script execution failed (use -d to debug)
+
+Nmap done: 1 IP address (1 host up) scanned in 17.00 seconds
